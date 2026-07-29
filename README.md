@@ -67,19 +67,19 @@ This project implements the core components of a Single Cycle RISC-V processor, 
 Compile the design:
 
 ```bash
-iverilog -o processor src/*.v testbench/*.v
+iverilog -o out.vvp Single_Cycle_Top_Tb.v Single_Cycle_Top.v
 ```
 
 Run the simulation:
 
 ```bash
-vvp processor
+vvp out.vvp
 ```
 
 View the waveform:
 
 ```bash
-gtkwave processor.vcd
+gtkwave
 ```
 
 ---
